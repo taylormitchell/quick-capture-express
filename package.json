@@ -1,0 +1,17 @@
+{
+  "name": "quick-capture-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "setup": "npm install && node db/init.js",
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "sqlite3": "^5.0.4"
+  }
+}
