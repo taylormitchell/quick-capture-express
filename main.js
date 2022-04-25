@@ -1,5 +1,6 @@
 var express = require('express');
 var path = require('path');
+var createError = require('http-errors')
 
 var apiRouter = require('./routes/api');
 
@@ -26,6 +27,7 @@ app.use(function(err, req, res, next) {
   
 });
 
-app.listen(3000, function() {
-    console.log('Server listening on port 3000');
+const PORT = 3001
+app.listen(PORT, function() {
+    console.log(`Server listening on port ${PORT}`);
 });
